@@ -551,19 +551,16 @@ async def process_appxwp(bot: Client, m: Message, user_id: int):
                         f.write(text)
                         
                     caption = (
-                        f"🎓 <b>PAID COURSES LIST</b> 🎓\n\n"
-                        f"📱 <b>APP:</b> {selected_app_name}\n"
-                        f"📚 <b>TOTAL COURSES:</b> {total}\n"
-                        f"📅 <b>DATE:</b> {time_new} IST\n\n"
-                        f"<code>╾───• U G  Extractor Pro •───╼</code>\n\n"
-                        "Send the index number to download course"
+                        f"📱 <b>APP NAME :</b>\n <code>{selected_app_name}<code>\n\n"
+                        f"💸 <b>TOTAL COURSES:</b> {total}\n\n"
+                        "<b>Send the index number to download</b>"
                     )
                                 
                     await editable.delete(True)
                     msg = await m.reply_document(
                         document=f"{course_details}.txt",
                         caption=caption,
-                        file_name=f"paid_course_details.txt"
+                        file_name=f"paid_course_details_@Wizard.txt"
                     )
                     
                     try:
