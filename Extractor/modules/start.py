@@ -57,10 +57,20 @@ TIMEOUT = 300  # 5 minutes timeout
 
 buttons = InlineKeyboardMarkup([
                 [
-                  InlineKeyboardButton("Lᴏɢɪɴ/Wɪᴛʜᴏᴜᴛ Lᴏɢɪɴ", callback_data="modes_")
+                  InlineKeyboardButton("Lᴏɢɪɴ/Wɪᴛʜᴏᴜᴛ Lᴏɢɪɴ", callback_data="findapi_"),
+                  InlineKeyboardButton("🦁 𝐌𝐀𝐒𝐓𝐄𝐑 𝐀𝐏𝐏𝐗 🦁", callback_data="appxlist")
                 ],[
-                  InlineKeyboardButton("🔍 Fɪɴᴅ Aᴘɪ", callback_data="findapi_"),
-                  InlineKeyboardButton("📓 Aᴘᴘx Aᴘᴘs", callback_data="appxlist")
+                  InlineKeyboardButton("🎯 𝐂𝐋𝐀𝐒𝐒𝐏𝐋𝐔𝐒", callback_data="classplus_"),
+                  InlineKeyboardButton("🅰 𝐀𝐃𝐃𝐀 𝟐𝟒/𝟕", callback_data="adda_")
+                ],[
+                  InlineKeyboardButton("♟ 𝐏𝐇𝐘𝐒𝐈𝐂𝐒 𝐖𝐀𝐋𝐋𝐀𝐇 ♟", callback_data="pw_")
+                ],[
+                  InlineKeyboardButton("🎩 𝐊𝐇𝐀𝐍 𝐆𝐒", callback_data="khan_"),
+                  InlineKeyboardButton("🏤 𝐊𝐃 𝐂𝐀𝐌𝐏𝐔𝐒", callback_data="kdlive_")
+                ],[
+                  InlineKeyboardButton("⛎ 𝐔𝐓𝐊𝐀𝐑𝐒𝐇 ⛎", callback_data="utkarsh_")
+                ],[
+                  InlineKeyboardButton("Lᴏɢɪɴ/Wɪᴛʜᴏᴜᴛ Lᴏɢɪɴ", callback_data="modes_")
                 ],
                 [
                   InlineKeyboardButton("🌸 Tᴇxᴛ ⟷ HTML 🌸", callback_data="converter_")
