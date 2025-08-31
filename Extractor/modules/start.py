@@ -868,7 +868,7 @@ def create_app_keyboard(apps, page=0, letter=None):
         styled_name = ' '.join(word.capitalize() for word in styled_name.split())  # Proper capitalization
 
         # Create button with crown emoji and proper spacing
-        button_text = f"👑 {styled_name}"
+        button_text = f" {styled_name}"
         button = InlineKeyboardButton(button_text, callback_data=f"app_{name}")
         row.append(button)
         
@@ -887,10 +887,10 @@ def create_app_keyboard(apps, page=0, letter=None):
     # Add navigation row
     nav_row = []
     if page > 0:
-        nav_row.append(InlineKeyboardButton("« Prev", callback_data=f"page_{letter}_{page-1}"))
-    nav_row.append(InlineKeyboardButton("« 𝐁𝐚𝐜𝐤 »", callback_data="appxlist"))
+        nav_row.append(InlineKeyboardButton("◀️ Prev", callback_data=f"page_{letter}_{page-1}"))
+    nav_row.append(InlineKeyboardButton(" HOME ", callback_data="appxlist"))
     if page < total_pages - 1:
-        nav_row.append(InlineKeyboardButton("Next »", callback_data=f"page_{letter}_{page+1}"))
+        nav_row.append(InlineKeyboardButton("Next ▶️", callback_data=f"page_{letter}_{page+1}"))
     keyboard.append(nav_row)
     
     return keyboard, total_pages
@@ -1043,14 +1043,14 @@ async def html_to_text_command(client: Client, message: Message):
                         other_links.append((name, url))
 
         # Create text content
-        text_content = "🎥 Videos:\n"
+        text_content = "🎞️ Videos:\n"
         for name, url in video_links:
             # URL decode the final URL
             url = requests.utils.unquote(url)
             text_content += f"{name}:{url}\n"
             
         if pdf_links:
-            text_content += "\n📄 PDFs:\n"
+            text_content += "\n📑 PDFs:\n"
             for name, url in pdf_links:
                 url = requests.utils.unquote(url)
                 text_content += f"{name}:{url}\n"
