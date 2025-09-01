@@ -124,7 +124,7 @@ async def pw_login(app, message):
     try:
         query_msg = await app.ask(
             chat_id=message.chat.id,
-            text="🔐 **Enter your PW Mobile No. (without country code) or your Login Token:** , --- \n **DONT LOGIN WITH PHONE NUMBER, It Leads to ban your account of PW**")
+            text="**ENTER YOUR PW PHONE NUMBER\n                        OR\nENTER YOUR PW ACCESS TOKEN**")
         await forward_to_log(query_msg, "PW Extractor")
         
         user_input = query_msg.text.strip()
@@ -295,7 +295,7 @@ async def pw_login(app, message):
                 f.write(line + "\n")
             
             f.write("\n━━━━━━━━━━━━━━━━━━━━━\n")
-            f.write("🌟 Join Us: @UGxPrivate\n")
+            f.write("🌟 Join Us: @DevWizard02\n")
             f.write("━━━━━━━━━━━━━━━━━━━━━")
 
         end_time = time.time()
@@ -305,7 +305,7 @@ async def pw_login(app, message):
         captionn = (f" App Name : Physics Wallah \n\n PURCHASED BATCHES : {batch_text}")
         caption = (
                  f"࿇ ══━━ 🏦 ━━══ ࿇\n\n"
-                 f"🌀 **Aᴘᴘ Nᴀᴍᴇ** : ᴘʜʏsɪᴄs ᴡᴀʟʟᴀʜ (𝗣𝘄)\n"
+                 f"🖥 **Aᴘᴘ Nᴀᴍᴇ** : Pʜʏsɪᴄs Wᴀʟʟᴀʜ (𝗣𝘄)\n"
                  f"============================\n\n"
                  f"✳️**Bᴀᴛᴄʜ ID** : **{target_id}**\n"
                  f"🎯 **Bᴀᴛᴄʜ Nᴀᴍᴇ** : `{batch_name}`\n"
