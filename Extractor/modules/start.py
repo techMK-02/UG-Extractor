@@ -721,11 +721,11 @@ async def handle_callback(client, query):
 
     elif query.data == "masterxapps_":
         await query.message.edit_text(
-            "**👑 Mᴀsᴛᴇʀ Aᴘᴘx Mᴇɴᴜ 👑**\n"
-            "  **• Aᴘᴘx Lɪsᴛ - Browse apps by name**\n"
-            "  **• Aᴘᴘx OTP - Generate OTP for apps**\n"
-            "  **• Aᴘᴘx API - Find API endpoints**\n"
-            "  **• Mᴀɴᴜᴀʟ API Eɴᴛʀʏ - Enter API directly**",
+            ".    **👑 Mᴀsᴛᴇʀ  Aᴘᴘx  Mᴇɴᴜ 👑**\n\n"
+            "**• Aᴘᴘx Lɪsᴛ - Browse apps by name**\n"
+            "**• Aᴘᴘx OTP - Generate OTP for apps**\n"
+            "**• Aᴘᴘx API - Find API endpoints**\n"
+            "**• Mᴀɴᴜᴀʟ API Eɴᴛʀʏ - Enter API directly**",
             reply_markup=InlineKeyboardMarkup([
                 [
                     InlineKeyboardButton("🔎 Fɪɴᴅ API", callback_data="findapi_"),
