@@ -73,7 +73,6 @@ buttons = InlineKeyboardMarkup([
                   InlineKeyboardButton("📑 𝙾𝚃𝙷𝙴𝚁𝚂", callback_data="manual_")
                 ],
                 [
-                  InlineKeyboardButton("🌸 Tᴇxᴛ ⟷ HTML 🌸", callback_data="converter_"),
                   InlineKeyboardButton("✨ Premium", callback_data="custom_")
                 ]
               ])
@@ -93,10 +92,10 @@ custom_button = [[
                   InlineKeyboardButton("🌸 Pᴡ 🌸", callback_data="pwwp"),
                   InlineKeyboardButton("❤️ Aᴘᴘx ❤️", callback_data="appxwp"),
                 ],[
-                  InlineKeyboardButton("🎯 CʟᴀssPʟᴜs 🎯", callback_data="cpwp"),
-                  InlineKeyboardButton("🎓 CDS Jᴏᴜʀɴᴇʏ 🎓", callback_data="cds_journey_free")
+                  InlineKeyboardButton("🎯 CʟᴀssPʟᴜs 🎯", callback_data="cpwp")
+                # InlineKeyboardButton("🎓 CDS Jᴏᴜʀɴᴇʏ 🎓", callback_data="cds_journey_free")
                 ],[
-                  InlineKeyboardButton("𝐁 𝐀 𝐂 𝐊", callback_data="modes_")
+                  InlineKeyboardButton("Bᴀᴄᴋ Tᴏ Hᴏᴍᴇ", callback_data="home_")
                 ]]
 
 button1 = [              
@@ -116,7 +115,7 @@ button1 = [
                     InlineKeyboardButton("🧿 Rᴀɴᴋᴇʀs Gᴜʀᴜᴋᴜʟ", callback_data="rgvikram_txt")
                 ],
                 [
-                    InlineKeyboardButton("𝐁 𝐀 𝐂 𝐊", callback_data="modes_")
+                    InlineKeyboardButton("Bᴀᴄᴋ Tᴏ Hᴏᴍᴇ", callback_data="home_")
                 ]
                 ]
 
