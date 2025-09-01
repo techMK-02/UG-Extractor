@@ -84,11 +84,9 @@ async def adda_command_handler(app, m):
     status_msg = None
     try:
         status_msg = await m.reply_text(
-            "🔹 <b>UG EXTRACTOR PRO</b> 🔹\n\n"
-            "Send login details in this format:\n"
-            "📧 <code>email*password</code>\n\n"
-            "<i>Example:</i>\n"
-            "- <code>user@gmail.com*password123</code>",
+            "**🔐 Sᴇɴᴅ ʏᴏᴜʀ ᴄʀᴇᴅᴇɴᴛɪᴀʟs**\n\n"
+            "**📝 ғᴏʀᴍᴀᴛ:** `ᴇᴍᴀɪʟ ɪᴅ*ᴘᴀssᴡᴏʀᴅ`"
+            "**✅ ᴇx.** `user@gmail.com*pass1234`",
             parse_mode=ParseMode.HTML
         )
 
