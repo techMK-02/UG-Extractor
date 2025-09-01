@@ -58,7 +58,7 @@ TIMEOUT = 300  # 5 minutes timeout
 buttons = InlineKeyboardMarkup([
                 [
                   InlineKeyboardButton("🔎 Fɪɴᴅ API 🔍", callback_data="findapi_"),
-                  InlineKeyboardButton("🦁 𝐌𝐀𝐒𝐓𝐄𝐑 𝐀𝐏𝐏𝐗 🦁", callback_data="masterxapps")
+                  InlineKeyboardButton("🦁 𝐌𝐀𝐒𝐓𝐄𝐑 𝐀𝐏𝐏𝐗 🦁", callback_data="masterxapps_")
                 ],[
                   InlineKeyboardButton("🎯 𝐂𝐋𝐀𝐒𝐒𝐏𝐋𝐔𝐒", callback_data="classplus_"),
                   InlineKeyboardButton("🅰 𝐀𝐃𝐃𝐀 𝟐𝟒/𝟕", callback_data="adda_")
@@ -729,7 +729,7 @@ async def handle_callback(client, query):
         await query.message.delete()
         await query.message.reply_to_message.delete()
 
-   elif query.data == "masterxapps_":
+    elif query.data == "masterxapps_":
         await query.message.edit_text(
             "**👑 Mᴀsᴛᴇʀ Aᴘᴘx Mᴇɴᴜ 👑
             "  **• Aᴘᴘx Lɪsᴛ - Browse apps by name**""
