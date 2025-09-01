@@ -731,7 +731,7 @@ async def handle_callback(client, query):
 
     elif query.data == "masterxapps_":
         await query.message.edit_text(
-            "**👑 Mᴀsᴛᴇʀ Aᴘᴘx Mᴇɴᴜ 👑
+            "**👑 Mᴀsᴛᴇʀ Aᴘᴘx Mᴇɴᴜ 👑**"
             "  **• Aᴘᴘx Lɪsᴛ - Browse apps by name**""
             "  **• Aᴘᴘx OTP - Generate OTP for apps**"
             "  **• Aᴘᴘx API - Find API endpoints**"
