@@ -35,8 +35,8 @@ async def khan_login(app: Client, message: Message):
         
         # Initial message
         editable = await message.reply_text(
-            "🔹 <b>KGS EXTRACTOR PRO</b> 🔹\n\n"
-            "Send <b>ID & Password</b> in this format: <code>ID*Password</code>"
+            "**🔐 Sᴇɴᴅ ʏᴏᴜʀ ᴄʀᴇᴅᴇɴᴛɪᴀʟs**"
+            "**📝 ғᴏʀᴍᴀᴛ:** `ɪᴅ*ᴘᴀssᴡᴏʀᴅ`"
         )
         
         input1 = await app.listen(chat_id=message.chat.id)
@@ -47,8 +47,8 @@ async def khan_login(app: Client, message: Message):
         
         if '*' not in raw_text:
             await editable.edit_text(
-                "❌ <b>Invalid format!</b>\n\n"
-                "Please send ID and password in this format: <code>ID*Password</code>"
+                "📵 <b>Invalid format!</b>\n\n"
+                "Please send ID and password in this format: <code>ɪᴅ*ᴘᴀssᴡᴏʀᴅ</code>"
             )
             return
             
