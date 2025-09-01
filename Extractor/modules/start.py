@@ -731,8 +731,8 @@ async def handle_callback(client, query):
                     InlineKeyboardButton("🔎 Fɪɴᴅ API", callback_data="findapi_"),
                     InlineKeyboardButton("📋 Aᴘᴘx Lɪꜱᴛ", callback_data="appxlist")
                 ],[
-                    InlineKeyboardButton("🔐 Aᴘᴘx OTP", callback_data="maintainer_"),
-                    InlineKeyboardButton("📬 Mᴀɴᴜᴀʟ API", callback_data="maintainer_")
+                    InlineKeyboardButton("🔐 Aᴘᴘx OTP", callback_data="appxotp_"),
+                    InlineKeyboardButton("📬 Mᴀɴᴜᴀʟ API", callback_data="manualapi_")
                 ],
                 [
                     InlineKeyboardButton("Bᴀᴄᴋ Tᴏ Hᴏᴍᴇ", callback_data="home_")
