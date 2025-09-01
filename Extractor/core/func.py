@@ -75,10 +75,10 @@ async def subscribe(app, message):
 
                 # 2. Send the invite message
                 sent = await message.reply_photo(
-                    photo="https://i.ibb.co/5hjHQ43s/file-360.jpg",
+                    photo="https://files.catbox.moe/fh731v.jpg",
                     caption=script.FORCE_MSG.format(message.from_user.mention),
                     reply_markup=InlineKeyboardMarkup([[
-                        InlineKeyboardButton("🌸 ɴᴇᴇᴅ ᴀᴘᴘʀᴏᴠᴀʟ ᴛᴏ ᴊᴏɪɴ 🌸", url=link)
+                        InlineKeyboardButton("Bᴀᴄᴋ-Uᴘ Cʜᴀɴɴᴇʟ 📢", url=link)
                     ]])
                 )
 
@@ -102,7 +102,7 @@ async def subscribe(app, message):
                 await message.reply_text(
                     "❗ Please join our updates channel to use the bot.",
                     reply_markup=InlineKeyboardMarkup([[
-                        InlineKeyboardButton("🌸 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ 🌸", url="https://t.me/zhonsnow")
+                        InlineKeyboardButton("Bᴀᴄᴋ-Uᴘ Cʜᴀɴɴᴇʟ 📢", url="https://t.me/DevWizard02")
                     ]])
                 )
             return 1
