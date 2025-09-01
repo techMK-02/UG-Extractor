@@ -57,8 +57,7 @@ TIMEOUT = 300  # 5 minutes timeout
 
 buttons = InlineKeyboardMarkup([
                 [
-                  InlineKeyboardButton("🔎 Fɪɴᴅ API 🔍", callback_data="findapi_"),
-                  InlineKeyboardButton("🦁 𝐌𝐀𝐒𝐓𝐄𝐑 𝐀𝐏𝐏𝐗 🦁", callback_data="masterxapps_")
+                  InlineKeyboardButton("👑 𝐌𝐀𝐒𝐓𝐄𝐑 𝐀𝐏𝐏𝐗 👑", callback_data="masterxapps_")
                 ],[
                   InlineKeyboardButton("🎯 𝐂𝐋𝐀𝐒𝐒𝐏𝐋𝐔𝐒", callback_data="classplus_"),
                   InlineKeyboardButton("🅰 𝐀𝐃𝐃𝐀 𝟐𝟒/𝟕", callback_data="adda_")
@@ -70,10 +69,12 @@ buttons = InlineKeyboardMarkup([
                 ],[
                   InlineKeyboardButton("⛎ 𝐔𝐓𝐊𝐀𝐑𝐒𝐇 ⛎", callback_data="utkarsh_")
                 ],[
-                  InlineKeyboardButton("Lᴏɢɪɴ/Wɪᴛʜᴏᴜᴛ Lᴏɢɪɴ", callback_data="modes_")
+                  InlineKeyboardButton("🚧 𝐂𝐖", callback_data="ugcw_"),
+                  InlineKeyboardButton("📑 𝙾𝚃𝙷𝙴𝚁𝚂", callback_data="manual_")
                 ],
                 [
-                  InlineKeyboardButton("🌸 Tᴇxᴛ ⟷ HTML 🌸", callback_data="converter_")
+                  InlineKeyboardButton("🌸 Tᴇxᴛ ⟷ HTML 🌸", callback_data="converter_"),
+                  InlineKeyboardButton("✨ Premium", callback_data="custom_")
                 ]
               ])
 
@@ -92,8 +93,8 @@ custom_button = [[
                   InlineKeyboardButton("🌸 Pᴡ 🌸", callback_data="pwwp"),
                   InlineKeyboardButton("❤️ Aᴘᴘx ❤️", callback_data="appxwp"),
                 ],[
-                  InlineKeyboardButton("🎯 CʟᴀssPʟᴜs 🎯", callback_data="cpwp")
-                  #InlineKeyboardButton("🎓 CDS Jᴏᴜʀɴᴇʏ 🎓", callback_data="cds_journey_free")
+                  InlineKeyboardButton("🎯 CʟᴀssPʟᴜs 🎯", callback_data="cpwp"),
+                  InlineKeyboardButton("🎓 CDS Jᴏᴜʀɴᴇʏ 🎓", callback_data="cds_journey_free")
                 ],[
                   InlineKeyboardButton("𝐁 𝐀 𝐂 𝐊", callback_data="modes_")
                 ]]
@@ -101,20 +102,10 @@ custom_button = [[
 button1 = [              
                 [
                     InlineKeyboardButton("👑 Aᴘɴɪ Kᴀᴋsʜᴀ", callback_data="ak_"),
-                    InlineKeyboardButton("❤️ Aᴅᴅᴀ 𝟸𝟺𝟽", callback_data="adda_")
-                ],
-                [
-                    InlineKeyboardButton("🌑 CʟᴀssPʟᴜs", callback_data="classplus_"),
-                    InlineKeyboardButton("⭐ Kʜᴀɴ Gs", callback_data="khan_")
-                ],
-                [
-                    InlineKeyboardButton("🔥 Pʜʏsɪᴄs Wᴀʟʟᴀʜ", callback_data="pw_"),
                     InlineKeyboardButton("🐦‍🔥 Sᴛᴜᴅʏ IQ", callback_data="iq_")
                 ],
                 [
-                    InlineKeyboardButton("💀 Kᴅ Cᴀᴍᴘᴜs", callback_data="kdlive_"),
-                    InlineKeyboardButton("🦋 Uᴛᴋᴀʀsʜ", callback_data="utkarsh_")
-                   # InlineKeyboardButton("🌸 CDS Jᴏᴜʀɴᴇʏ", callback_data="cds_journey")
+                    InlineKeyboardButton("🌸 CDS Jᴏᴜʀɴᴇʏ", callback_data="cds_journey")
                 ],
                 [
                     InlineKeyboardButton("🎀 Mʏ Pᴀᴛʜsʜᴀʟᴀ", callback_data="my_pathshala_"),
@@ -741,8 +732,8 @@ async def handle_callback(client, query):
                     InlineKeyboardButton("🔎 Fɪɴᴅ API", callback_data="findapi_"),
                     InlineKeyboardButton("📋 Aᴘᴘx Lɪꜱᴛ", callback_data="appxlist")
                 ],[
-                    InlineKeyboardButton("🔐 Aᴘᴘx OTP", callback_data="appxlist"),
-                    InlineKeyboardButton("📬 Mᴀɴᴜᴀʟ API", callback_data="appxlist")
+                    InlineKeyboardButton("🔐 Aᴘᴘx OTP", callback_data="maintainer_"),
+                    InlineKeyboardButton("📬 Mᴀɴᴜᴀʟ API", callback_data="maintainer_")
                 ],
                 [
                     InlineKeyboardButton("Bᴀᴄᴋ Tᴏ Hᴏᴍᴇ", callback_data="home_")
