@@ -57,8 +57,8 @@ TIMEOUT = 300  # 5 minutes timeout
 
 buttons = InlineKeyboardMarkup([
                 [
-                  InlineKeyboardButton("Lᴏɢɪɴ/Wɪᴛʜᴏᴜᴛ Lᴏɢɪɴ", callback_data="findapi_"),
-                  InlineKeyboardButton("🦁 𝐌𝐀𝐒𝐓𝐄𝐑 𝐀𝐏𝐏𝐗 🦁", callback_data="appxlist")
+                  InlineKeyboardButton("🔎 Fɪɴᴅ API 🔍", callback_data="findapi_"),
+                  InlineKeyboardButton("🦁 𝐌𝐀𝐒𝐓𝐄𝐑 𝐀𝐏𝐏𝐗 🦁", callback_data="masterxapps")
                 ],[
                   InlineKeyboardButton("🎯 𝐂𝐋𝐀𝐒𝐒𝐏𝐋𝐔𝐒", callback_data="classplus_"),
                   InlineKeyboardButton("🅰 𝐀𝐃𝐃𝐀 𝟐𝟒/𝟕", callback_data="adda_")
@@ -729,6 +729,27 @@ async def handle_callback(client, query):
         await query.message.delete()
         await query.message.reply_to_message.delete()
 
+   elif query.data == "masterxapps_":
+        await query.message.edit_text(
+            "**👑 Mᴀsᴛᴇʀ Aᴘᴘx Mᴇɴᴜ 👑
+            "  **• Aᴘᴘx Lɪsᴛ - Browse apps by name**""
+            "  **• Aᴘᴘx OTP - Generate OTP for apps**"
+            "  **• Aᴘᴘx API - Find API endpoints**"
+            "  **• Mᴀɴᴜᴀʟ API Eɴᴛʀʏ - Enter API directly**",
+            reply_markup=InlineKeyboardMarkup([
+                [
+                    InlineKeyboardButton("🔎 Fɪɴᴅ API", callback_data="findapi_"),
+                    InlineKeyboardButton("📋 Aᴘᴘx Lɪꜱᴛ", callback_data="appxlist")
+                ],[
+                    InlineKeyboardButton("🔐 Aᴘᴘx OTP", callback_data="appxlist"),
+                    InlineKeyboardButton("📬 Mᴀɴᴜᴀʟ API", callback_data="appxlist")
+                ],
+                [
+                    InlineKeyboardButton("Bᴀᴄᴋ Tᴏ Hᴏᴍᴇ", callback_data="home_")
+                ]
+            ])
+        )
+
     elif query.data == "txt2html_":
         await show_txt2html_help(client, query.message)
 
@@ -1061,7 +1082,7 @@ async def html_to_text_command(client: Client, message: Message):
                 url = requests.utils.unquote(url)
                 text_content += f"{name}:{url}\n"
                 
-        text_content += "\n@GodxBots"
+        text_content += "\n@DevWizard02"
                 
         # Save as text file
         txt_path = file_path.rsplit('.', 1)[0] + '.txt'
@@ -1072,7 +1093,7 @@ async def html_to_text_command(client: Client, message: Message):
         await message.reply_document(
             txt_path,
             thumb=thumb_path if thumb_path else None,
-            caption="<blockquote>✅ HTML converted to text format\n🔓 All URLs have been decoded\n\n🤖 @zhonsnow</blockquote>"
+            caption="<blockquote>✅ HTML converted to text format\n🔓 All URLs have been decoded\n\n🤖 @WizardExtractBot</blockquote>"
         )
         
         # Cleanup
