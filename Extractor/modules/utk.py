@@ -107,8 +107,9 @@ async def handle_utk_logic(app, m):
     session_manager = SessionManager(app)
     start_time = time.time()
     editable = await m.reply_text(
-        "🔹 <b>UTK EXTRACTOR PRO</b> 🔹\n\n"
-        "Send **ID & Password** in this format: <code>ID*Password</code>"
+        "**Send your credentials as shown below**"
+        "**Phone Number*Passwrd**"
+        "**✅ ᴇx :** `9876497493*pass321` " 
     )
     # After getting user response
     input1 = await app.listen(chat_id=m.chat.id)
