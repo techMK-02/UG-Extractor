@@ -210,13 +210,12 @@ async def appex_v5_txt(app, message, api, name):
     
     login_prompt = (
         "━━━━━━━━━━━━━━━━━━━━━\n"
-        "🎭 <b>ᴜɢ ᴇxᴛʀᴀᴄᴛᴏʀ ᴘʀᴏ</b> 🎭\n"
-        "━━━━━━━━━━━━━━━━━━━━━\n\n"
         "📝 <b>ʜᴏᴡ ᴛᴏ ʟᴏɢɪɴ:</b>\n\n"
+        "━━━━━━━━━━━━━━━━━━━━━\n\n"
         "1️⃣ ᴜsᴇ ɪᴅ & ᴘᴀssᴡᴏʀᴅ:\n"
         "   <code>ID*Password</code>\n\n"
         "2️⃣ ᴏʀ ᴜsᴇ ᴛᴏᴋᴇɴ ᴅɪʀᴇᴄᴛʟʏ\n\n"
-        "📌 <b>ᴇxᴀᴍᴘʟᴇs:</b>\n"
+        "📍 <b>Ex:</b>\n"
         "• ɪᴅ/ᴘᴀss ➠ <code>9769696969*password123</code>\n"
         "• ᴛᴏᴋᴇɴ ➠ <code>eyJhbGciOiJIUzI1...</code>\n\n"
         "━━━━━━━━━━━━━━━━━━━━━"
@@ -475,7 +474,7 @@ async def appex_v5_txt(app, message, api, name):
                         f"⏱ **Tɪᴍᴇ Tᴀᴋᴇɴ** : {elapsed_time:.1f}s\n"
                         f"📅 **Dᴀᴛᴇ** : {time_new}\n"
                         "━━━━━━━━━━━━━━━━━━━━━\n"
-                        "🔰 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ @UGExtractorPro"
+                        "🔰 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ @DevWizard02"
                     )
                 
                     try:
