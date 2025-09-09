@@ -107,9 +107,8 @@ async def handle_utk_logic(app, m):
     session_manager = SessionManager(app)
     start_time = time.time()
     editable = await m.reply_text(
-        "**Send your credentials as shown below**"
-        "**Phone Number*Passwrd**"
-        "**✅ ᴇx :** `9876497493*pass321` " 
+        "🔹 <b>UTK EXTRACTOR PRO</b> 🔹\n\n"
+        "Send **ID & Password** in this format: <code>ID*Password</code>"
     )
     # After getting user response
     input1 = await app.listen(chat_id=m.chat.id)
@@ -637,7 +636,7 @@ async def login(app, user_id, m, all_urls, start_time, bname, batch_id, progress
             f"├─ 📦 Others: {other_count}\n"
             f"└─ 🔐 Protected: {drm_count}\n\n"
             f"🚀 <b>Extracted by</b>: @{(await app.get_me()).username}\n\n"
-            f"<code>╾───• U G  Extractor Pro •───╼</code>"
+            f"╾───• @IFSAshuAbhiBot•───╼"
         )
         
         # Send file with thumbnail
